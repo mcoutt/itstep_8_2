@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="129cbcf5-fb13-47cc-9309-5b1c4a39a8ec" name="Default Changelist" comment="some" />
+    <list default="true" id="129cbcf5-fb13-47cc-9309-5b1c4a39a8ec" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bondarenko Leonid/First for GitHub.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bondarenko Leonid/First for GitHub.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +17,7 @@
         <entry file="file://$PROJECT_DIR$/Bondarenko Leonid/First for GitHub.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
+              <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -28,8 +31,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Bondarenko Leonid/First_for_GitHub_1.py" />
-        <option value="$PROJECT_DIR$/Bondarenko Leonid/First for GitHub.py" />
         <option value="$PROJECT_DIR$/Sergey_Babenko/test_file.py" />
+        <option value="$PROJECT_DIR$/Bondarenko Leonid/First for GitHub.py" />
       </list>
     </option>
   </component>
@@ -42,8 +45,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="372" />
-    <option name="y" value="17" />
+    <option name="x" value="586" />
+    <option name="y" value="55" />
     <option name="width" value="1265" />
     <option name="height" value="1000" />
   </component>
@@ -65,11 +68,6 @@
               <item name="For_Git" type="b2602c69:ProjectViewProjectNode" />
               <item name="For_Git" type="462c0819:PsiDirectoryNode" />
               <item name="Bondarenko Leonid" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="For_Git" type="b2602c69:ProjectViewProjectNode" />
-              <item name="For_Git" type="462c0819:PsiDirectoryNode" />
-              <item name="Sergey_Babenko" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="For_Git" type="b2602c69:ProjectViewProjectNode" />
@@ -237,23 +235,31 @@
       <option name="project" value="LOCAL" />
       <updated>1555523220267</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="some">
+      <created>1555523571170</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1555523571170</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="298" y="14" width="1012" height="800" extended-state="0" />
+    <frame x="469" y="44" width="1012" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28893444" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" sideWeight="0.4989754" weight="0.32884902" />
+      <window_info anchor="bottom" id="Version Control" sideWeight="0.4989754" visible="true" weight="0.32884902" />
       <window_info anchor="bottom" id="Python Console" weight="0.32884902" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.49795082" visible="true" weight="0.32884902" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.49795082" weight="0.32884902" />
       <window_info anchor="bottom" id="Event Log" sideWeight="0.5020492" side_tool="true" weight="0.32884902" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989754" weight="0.32884902" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39910313" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -329,7 +335,7 @@
     <entry file="file://$PROJECT_DIR$/Bondarenko Leonid/First for GitHub.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
+          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
