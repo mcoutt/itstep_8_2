@@ -18,10 +18,13 @@ try:
                 file = open('text.txt', 'a+')
                 file.write(input("Введите то что хотите записать в файл: "))  # записывает новую строку в файл
                 file.write('\n')
-
             except Exception as e:
                 print(e)
             finally:
+                file.close()
+                file = open('text.txt', 'r')  # отображает содержимое в файле
+                for line in file:
+                    print(line)
                 file.close()
         else:
             print('Wrong')
