@@ -1,1 +1,3 @@
-#git'llkj[o'
+
+def a():
+    return 'this is from '
