@@ -42,7 +42,14 @@ except Exception as e:
     print(e)
 
 
+import sys
+for i in sys.path:
+    print(i)
 
+print(dir(sys))
+
+import os
+print(os.__doc__)
 
 
 
