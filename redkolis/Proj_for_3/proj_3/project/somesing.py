@@ -1,6 +1,7 @@
 a = 5
 if a == 5:
     print('Yees')
+
 a = str(input())
 print(a[2])
 print(a[-2])
