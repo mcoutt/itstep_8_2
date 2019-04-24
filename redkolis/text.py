@@ -5,7 +5,7 @@ try:
     while TF:
         action = str(input('Выберите действие с файлом: '))  # выбор действия в файле
 
-        if action == 'open' or 'открыть':
+        if action in ['open', 'открыть']:
             file = open('text.txt', 'r')  # отображает содержимое в файле
             for line in file:
                 print(line)
