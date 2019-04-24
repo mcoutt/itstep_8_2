@@ -24,7 +24,7 @@ try:
                 file.close()
                 file = open('text.txt', 'r')  # отображает содержимое в файле
                 for line in file:
-                    print(line)
+                    print("Теперь ваш файл выглядит так:\n", line)
                 file.close()
         else:
             print('Wrong')
