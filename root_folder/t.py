@@ -13,3 +13,5 @@ class B:
 
 
 b = B(3, 4)
+
+print('ok')
