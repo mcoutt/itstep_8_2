@@ -17,7 +17,7 @@ _mailinglist
 .cache/
 .pytest_cache/
 docs/_build/
-
+*/venv/
 # Coverage reports
 htmlcov/
 .coverage
