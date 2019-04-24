@@ -5,23 +5,26 @@ try:
     while TF:
         action = str(input('Выберите действие с файлом: '))  # выбор действия в файле
 
-        if action in ['open', 'открыть']:
+        if action == 'open' or action == 'открыть':
             file = open('text.txt', 'r')  # отображает содержимое в файле
             for line in file:
                 print(line)
             file.close()
-        elif action == 'exit' or 'выход':
+        elif action == 'exit' or action == 'выход':
             TF = False
             continue
-        elif action == 'write' or 'запись':
+        elif action == 'write' or action == 'запись':
             try:
                 file = open('text.txt', 'a+')
                 file.write(input("Введите то что хотите записать в файл: "))  # записывает новую строку в файл
                 file.write('\n')
-
             except Exception as e:
                 print(e)
             finally:
+                file.close()
+                file = open('text.txt', 'r')  # отображает содержимое в файле
+                for line in file:
+                    print(line)
                 file.close()
         else:
             print('Wrong')
