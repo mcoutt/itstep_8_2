@@ -3,6 +3,11 @@
 /venv
 /venv/*
 venv*
+*/venv/
+/_env
+/_env/*
+_env*
+*/env/
 .flaskenv
 *.pyc
 *.pyo
@@ -17,7 +22,6 @@ _mailinglist
 .cache/
 .pytest_cache/
 docs/_build/
-*/venv/
 # Coverage reports
 htmlcov/
 .coverage
