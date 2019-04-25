@@ -22,8 +22,10 @@ try:
         if choise == 'new.txt':
             name = input('Введите название нового файла: ') + '.txt'
             while 1:
-                if name == 'new.txt':
+                if name == 'new.txt':  # убираю конфликты в названиях
                     name = input('Введите другое название для файла: ') + '.txt'
+                elif name in mytxt:
+                    name = input('Такой файл уже существует, введите другое название для файла: ') + '.txt'
                 else:
                     print('Файл с названием "{0}" успешно создан'.format(name.replace('.txt', '')))
                     file = open(name, 'a+')
