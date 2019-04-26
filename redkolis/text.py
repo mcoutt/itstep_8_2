@@ -43,10 +43,10 @@ try:
                 try:
                     action: str = str(input('Выберите действие с файлом: '))  # выбор действия в файле
                     if action == 'close':
-                        break
+                        TF = False
                     elif action == 'exit' or action == 'выход':
                         TF1 = False
-                        break
+                        TF = False
                     elif action == 'write' or action == 'запись':
                         file = open(choise, 'a+')
                         file.write(input("Введите то что хотите записать в файл: "))  # записывает новую строку в файл
