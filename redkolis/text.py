@@ -13,13 +13,13 @@ try:
     while TF1:
         TF = True
         print('Доступные файлы:')
-        files = listdir(".")
+        files = listdir(".")    # отображение существующих файлов
 
         mytxt = list(filter(lambda x: x.endswith('.txt'), files))
         for i in mytxt:
             print(i.replace('.txt', ''))  # Выбор файла для работы
         choise = input('Выберите один из них либо введите "new" для создания нового:\n') + '.txt'
-        if choise == 'new.txt':
+        if choise == 'new.txt':  # создание нового файла
             name = input('Введите название нового файла: ') + '.txt'
             while 1:
                 if name == 'new.txt':  # убираю конфликты в названиях
@@ -32,7 +32,7 @@ try:
                     file.write(' ')
                     file.close()
                     break
-        elif choise in mytxt:
+        elif choise in mytxt:  # работа с существующим файлом
             print('Ключевые фразы:\n', '"write" или "запись" - запись с новой строки\n',
                   '"clear" или "очистить" - удалить всё и записать с начала\n',
                   '"close" - закрыть файл и выбрать другой\n',
@@ -45,7 +45,7 @@ try:
                     if action == 'close':
                         TF = False
                     elif action == 'exit' or action == 'выход':
-                        TF1 = False
+                        TF1 = False  # конец работы с файлом
                         TF = False
                     elif action == 'write' or action == 'запись':
                         file = open(choise, 'a+')
@@ -55,7 +55,7 @@ try:
                         print("Вот содержимое файла после изменений:\n")
                         readfile()
                     elif action == 'clear' or action == 'очистить':
-                        file = open(choise, 'w+')
+                        file = open(choise, 'w+')  # выход с файла
                         file.write(
                             input("Введите то что хотите записать в файл: "))
                         file.write('\n')  # записывает новую строку в очищенный файл
