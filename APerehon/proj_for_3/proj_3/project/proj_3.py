@@ -19,3 +19,6 @@ print(Dima.age)
 print(Dima.name)
 
 #print(Person.name + 'ему сейчас : ' + str(Person.age))
+
+
+
