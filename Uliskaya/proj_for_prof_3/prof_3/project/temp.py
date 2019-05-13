@@ -8,3 +8,6 @@ print(b)
 #  print comment
 
 x = 10
+
+#  not
+print('not')
