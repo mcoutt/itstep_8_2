@@ -1,5 +1,3 @@
-print("привет")
-
 class Person:#class
     name = "Dima"
     age = 12
@@ -18,4 +16,4 @@ Dima.set("Дима",55)
 print(Dima.age)
 print(Dima.name)
 
-#print(Person.name + 'ему сейчас : ' + str(Person.age))
+print(Person.name + ' ему сейчас : ' + str(Person.age))
