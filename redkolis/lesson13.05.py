@@ -1,4 +1,3 @@
-
 class Home:
     def __init__(self, height=None, width=None):
         self.height = height
