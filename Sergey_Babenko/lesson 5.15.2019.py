@@ -10,4 +10,8 @@ class Home:
 
     def water_supply (self, hot=None):
         return f"hot water is: (hot)"
-    
+
+home_l = Home(34, 12, 7)
+dir(home_1)
+home_1.net.speed
+Home.net_speed
