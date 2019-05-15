@@ -13,6 +13,8 @@ class Home:
 
 
 class Dorm(Home):
+    '''Слолжные условия остуденческой жизни'''
+
     def __init__(self, w, l):
         super().__init__(w, l)
         self.cockroaches = 'match'
@@ -31,4 +33,4 @@ home.water_supply('Yes')
 print(home.net_speed(145))
 
 home2 = Dorm(23, 32)
-print(home2.water_supply(), home2.cockroaches, home2.h, sep='\n')
+print(home2.water_supply(), home2.cockroaches, home2.h, home2.__doc__, sep='\n')
