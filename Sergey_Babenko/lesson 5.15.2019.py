@@ -11,7 +11,11 @@ class Home:
     def water_supply (self, hot=None):
         return f"hot water is: (hot)"
 
-home_l = Home(34, 12, 7)
-dir(home_1)
-home_1.net.speed
-Home.net_speed
+class Dorm(Home)
+    def __init__(self):
+        saper().__init__(w,3)
+        self.cockroaches = "match"
+        self.w = w
+        self.l = l
+    def possible_2, (self, ps="No"):
+        return f"possible water is (hot)"
