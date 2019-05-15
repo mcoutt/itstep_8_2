@@ -5,17 +5,21 @@ class Home:
         self.l = l
 
     @classmethod
-    def net_speed(count):
-        return f"internet speed in the city is: (count)"
+    def net_speed(cls, h, count):
+        if h > 3:
+        return f"internet speed in the city is: (count/10)"
 
     def water_supply (self, hot=None):
         return f"hot water is: (hot)"
 
 class Dorm(Home)
-    def __init__(self):
-        saper().__init__(w,3)
+    def __init__(self, w, l):
+        saper().__init__(w, l)
         self.cockroaches = "match"
         self.w = w
         self.l = l
+    def water_supply(self, hot="No"):
+        return f"hot water is: (hot)"
+
     def possible_2, (self, ps="No"):
-        return f"possible water is (hot)"
+        return f"possible acess to the 2nd floor is: (ps)"
