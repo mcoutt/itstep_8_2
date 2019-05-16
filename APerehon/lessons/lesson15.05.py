@@ -51,4 +51,4 @@ home_2 = Dorn(23, 122)
 # h2 = Home(23, 32, 7)
 # print(h2.net_speed(h2.h,145))
 
-print(home_2.__doc__)#показывает комментарии
+# print(home_2.__doc__)#показывает комментарии
