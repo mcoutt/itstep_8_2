@@ -10,3 +10,5 @@ class Home:
 home = Home(44, 12)
 
 Home.r = 45
+
+print('Hello from other side')
