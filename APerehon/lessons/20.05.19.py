@@ -34,13 +34,13 @@ class BMW:
         try:
             """we will check our weight"""
             print(f"  doors:{self.doors}")
-            if self.doors == "4":
+            if self.doors == 4:
                 self.weight += 50
                 print(f"You have sedan{self.weight}")
-            elif self.doors == "2":
+            elif self.doors == 2:
                 self.weight -= 50
                 print(f"You have coupe{self.weight}")
-            elif self.doors == "6":
+            elif self.doors == 6:
                 self.weight += 100
                 print(f"You have 6 doors{self.weight}")
         except Exception as e:
@@ -67,7 +67,7 @@ class SuperCar(BMW):
         print(discription)
 
 
-mycar1 = BMW("F90", 5, 6)
+mycar1 = BMW("F90", 5, 4)
 mycar2 = BMW("i", 8, 2)
 
 mycar1.show_car()
@@ -92,3 +92,5 @@ mycar.show_car()
 mysupercar.show_car()
 
 mycar1.calculate_weight()
+
+
