@@ -47,4 +47,4 @@ class SuperHero(Hero):
             self.health) + " Magic is " + str(self.magic)).title()
         print(discription)
 
-    
+
