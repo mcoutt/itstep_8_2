@@ -36,15 +36,15 @@ class SuperHero(Hero):
         """Initiate our Super Hero"""
         super().__init__(name, level, race)
         self.magiclevel = magiclevel
-        self.magic = 100
+        self.__magic = 100#__ мы это сделали ,чтобы не менять из вне (инкапсуляция)
 
     def makemagic(self):
         """Use magic"""
-        self.magic -= 10
+        self.__magic -= 10
 
     def show_hero(self):
         discription = (self.name + " Level is: " + str(self.level) + " Race is: " + self.race + " Health is: " + str(
-            self.health) + " Magic is " + str(self.magic)).title()
+            self.health) + " Magic is " + str(self.__magic)).title()
         print(discription)
 
 
