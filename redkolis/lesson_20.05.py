@@ -39,6 +39,7 @@ class Lada:
               f'\nПробег - {self.mileage} \nЦена- {self.price}')
 
 
+speed, wei, mile, pri = 0, 0, 0, 0
 print('Введите характеристики автомобиля:')
 abc = True
 while abc:
