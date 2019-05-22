@@ -100,7 +100,7 @@ mysupercar.show_car()
 
 mycar1.calculate_weight()
 mycar1.writesomething(98)
-#123456789
+#123
 
 
 
