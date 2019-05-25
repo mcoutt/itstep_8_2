@@ -1,5 +1,6 @@
 from hero import *
-#------------MAIN---------------------
+
+# ------------MAIN---------------------
 
 myhero1 = Hero("Vurdalak", 5, "Orc")
 myhero2 = Hero("Alexander", 4, "Human")
@@ -16,12 +17,13 @@ mysuperhero = SuperHero("Moisey", 10, "Human", 5)
 
 myhero.show_hero()
 mysuperhero.show_hero()
+
 mysuperhero.makemagic()
 mysuperhero.show_hero()
 
-
-
-
+mysuperhero.makemagic()
+mysuperhero.makemagic()
+mysuperhero.show_hero()
 
 
 

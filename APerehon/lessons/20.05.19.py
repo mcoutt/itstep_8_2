@@ -36,15 +36,21 @@ class BMW:
             print(f"  doors:{self.doors}")
             if self.doors == 4:
                 self.weight += 50
-                print(f"You have sedan{self.weight}")
+                print(f"You have sedan: {self.weight}")
             elif self.doors == 2:
                 self.weight -= 50
-                print(f"You have coupe{self.weight}")
+                print(f"You have coupe: {self.weight}")
             elif self.doors == 6:
                 self.weight += 100
-                print(f"You have 6 doors{self.weight}")
+                print(f"You have 6 doors: {self.weight}")
         except Exception as e:
             print(e)
+    def writesomething(self,rides):
+        f = open("car", "a+")
+        f.write(str(self.quality * rides))
+        f.close()
+        a = open("car")
+        return print(a.read())
 
 
 class SuperCar(BMW):
@@ -65,6 +71,7 @@ class SuperCar(BMW):
                     self.model + " series is: " + str(self.series) + " doors: " + str(self.doors) + " guality: " + str(
                 self.quality) + " price is: " + str(self.price)).title()
         print(discription)
+
 
 
 mycar1 = BMW("F90", 5, 4)
@@ -92,5 +99,8 @@ mycar.show_car()
 mysupercar.show_car()
 
 mycar1.calculate_weight()
+mycar1.writesomething(98)
+#123
+
 
 
