@@ -30,7 +30,7 @@ class Lada:
         self.mil += 1000
         self.mileage += 1000
 
-    def round_TWJ(self):
+    def round_twj(self):
         self.mil += 500000
         self.mileage += 500000
 
@@ -68,7 +68,7 @@ while True:
         car.accident()
         print('Вы попали в аварию')
     elif a == '4':
-        car.round_TWJ()
+        car.round_twj()
         print('Вы вернулись с Кругосветного путешествия')
     elif a == '5':
         car.big_mileage()
