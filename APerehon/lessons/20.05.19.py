@@ -46,7 +46,7 @@ class BMW:
         except Exception as e:
             print(e)
     def writesomething(self,rides):
-        f = open("car", "a+")
+        f = open("car.txt", "a+")
         f.write(str(self.quality * rides))
         f.close()
         a = open("car")
