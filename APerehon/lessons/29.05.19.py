@@ -95,11 +95,11 @@ from pprint import pprint
 # pprint(a)
 
 
-while True:
-    try:
-        i = int(input("->"))
-    except:
-            print("Bad Human")
-    else:
-        print(i)
-    print("Продолжим?")
+# while True:
+#     try:
+#         i = int(input("->"))
+#     except:
+#             print("Bad Human")
+#     else:
+#         print(i)
+#     print("Продолжим?")
