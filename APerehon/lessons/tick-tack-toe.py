@@ -9,8 +9,11 @@ def board_view():
         print(elem, end='|')
     print()
 
-def check(field):
-    return True
+
+def is_tile_filled(field):
+    if isinstance(field, str):
+        return True
+
 
 
 def input_player():
@@ -20,9 +23,10 @@ def input_player():
         except:
             print('Вводи только числа')
         else:
-            if field in range(1,10) and check(field):#должно выдавать True или False
-                return field - 1
-            print('Ввел не коректное число')
+            if (field in range(1,10)) and (not is_tile_filled(board[field-1])):
+                return field-1
+            print("Поле заполнено")
+
 flag = True
 tile = ['x','o']
 while True:
