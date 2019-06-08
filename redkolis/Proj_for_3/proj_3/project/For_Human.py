@@ -12,7 +12,7 @@ def hh_parse(base_url, headers):
     session = requests.Session()
     request = session.get(base_url, headers=headers)
     if request.status_code == 200:
-        soup = bs(request.content, 'html.parser')
+        soup = bs(request.content, 'lxml')
         divs = soup.find_all('div', attrs={'data-qa': 'vacancy-serp__vacancy'})
         for div in divs:
             title = div.find('a', attrs={'data-qa': 'vacancy-serp__vacancy-title'}).text
@@ -22,12 +22,13 @@ def hh_parse(base_url, headers):
             text1 = div.find('div', attrs={'data-qa': 'vacancy-serp__vacancy_snippet_responsibility'}).text
             content = text1 + ' ' + text2
             jobs.append({
-                'title': title,
-                'href': href,
-                'company': company,
-                'content': content
+                'Название должности': title,
+                'Ссылка': href,
+                'Название компании': company,
+                'Описание': content
             })
-        print(len(jobs))
+        for i in jobs:
+            print(i, end='\n')
 
     else:
         print('ERROR')
