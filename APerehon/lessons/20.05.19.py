@@ -46,10 +46,10 @@ class BMW:
         except Exception as e:
             print(e)
     def writesomething(self,rides):
-        f = open("car", "a+")
+        f = open("car.txt", "a+")
         f.write(str(self.quality * rides))
         f.close()
-        a = open("car")
+        a = open("car.txt")
         return print(a.read())
 
 
@@ -72,35 +72,37 @@ class SuperCar(BMW):
                 self.quality) + " price is: " + str(self.price)).title()
         print(discription)
 
+if __name__ == '__main__':
 
 
-mycar1 = BMW("F90", 5, 4)
-mycar2 = BMW("i", 8, 2)
+    mycar1 = BMW("F90", 5, 4)
+    mycar2 = BMW("i", 8, 2)
 
-mycar1.show_car()
-mycar2.show_car()
+    mycar1.show_car()
+    mycar2.show_car()
 
-mycar1.tuning()
-mycar1.show_car()
+    mycar1.tuning()
+    mycar1.show_car()
 
-mycar2.move()
-mycar2.show_car()
+    mycar2.move()
+    mycar2.show_car()
 
-mycar = SuperCar("f15", 5, 4)
-mysupercar = SuperCar("320d", 3, 4)
+    mycar = SuperCar("f15", 5, 4)
+    mysupercar = SuperCar("320d", 3, 4)
 
-mycar.show_car()
-mysupercar.show_car()
+    mycar.show_car()
+    mysupercar.show_car()
 
-mycar.restyling()
-mysupercar.restyling()
+    mycar.restyling()
+    mysupercar.restyling()
 
-mycar.show_car()
-mysupercar.show_car()
+    mycar.show_car()
+    mysupercar.show_car()
 
-mycar1.calculate_weight()
-mycar1.writesomething(98)
-#123
+    mycar1.calculate_weight()
+    mycar1.writesomething(98)
+    #123
+
 
 
 
