@@ -19,6 +19,7 @@
 #             print('Error')
 #
 # Iterpals().login()
+
 import requests
 
 url = 'http://pythontutor.ru/accounts/login/'
@@ -32,3 +33,5 @@ r = session.get(url, data=values)
 if r.status_code == 200:
     print('OK')
 print(r.text)
+
+
