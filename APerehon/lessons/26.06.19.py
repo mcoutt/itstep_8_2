@@ -12,3 +12,5 @@
 def f(a:int,c:int)->str:
     return str(a)+str(c)
 
+# a = f(4,5)
+# # print(a)
