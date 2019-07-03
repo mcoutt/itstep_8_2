@@ -3,11 +3,10 @@ import threading
 import time
 
 s = socket.socket()
-PORT = 5000
+PORT = 6000
 s.bind(("0.0.0.0", PORT))
 s.listen(5)
 print('Server started with ', PORT)
-c, a = s.accept()
 
 
 def handle(c):
