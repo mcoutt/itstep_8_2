@@ -1,21 +1,39 @@
 import socket
 import time
 
-sock = socket.socket()
-sock.connect(('localhost', 4013))
+s = socket.socket()
+s.connect(('127.5.5.11', 6014))
 
-data = input('Send> ')
-sock.sendall(data.encode())
+data = input("Send>")
+s.sendall(data.encode())
 
 while True:
     try:
-        data = sock.recv(1024).decode()
+        data = s.recv(1024).decode()
     except:
-        print('Server Dead!!!')
+        print('Server dead!!!')
         break
-
     print(data)
-    data = input('Send> ')
-    sock.sendall(data.encode())
+    data = input("Send>")
+    s.sendall(data.encode())
 
-sock.close()
+s.close()
+
+# sock = socket.socket()
+# sock.connect(('localhost', 6000))
+#
+# data = input('Send> ')
+# sock.sendall(data.encode())
+#
+# while True:
+#     try:
+#         data = sock.recv(1024).decode()
+#     except:
+#         print('Server Dead!!!')
+#         break
+#
+#     print(data)
+#     data = input('Send> ')
+#     sock.sendall(data.encode())
+#
+# sock.close()
