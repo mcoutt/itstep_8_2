@@ -20,5 +20,5 @@ def show():
     print("Я обычная функция")
 
 
-#show = decorator(show)
+# show = decorator(show)
 show()
