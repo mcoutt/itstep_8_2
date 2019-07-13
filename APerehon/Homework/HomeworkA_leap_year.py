@@ -1,4 +1,4 @@
-x = int(input())#Високосний рік
+x = int(input())  # Високосний рік
 if x % 4 == 0 and x % 100 != 0:
     print('YES')
 elif x % 400 == 0:
