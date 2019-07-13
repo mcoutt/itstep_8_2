@@ -23,13 +23,9 @@ import random as r#as + указуем имя
 from module import (hi as h,add as a)
 
 try:
-   import nomodule
+    import nomodule
 except ImportError:
     print('Модуля nomodule не существует')
 
 h()
 print(a(45,15))
-
-
-
-
