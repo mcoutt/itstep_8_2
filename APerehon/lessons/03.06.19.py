@@ -34,7 +34,6 @@ while word:
     let = word[0]
     a[let] = word.count(let)
     print(word)
-    word = word.replace(let,'')
+    word = word.replace(let, '')
 
 print(a)
-
