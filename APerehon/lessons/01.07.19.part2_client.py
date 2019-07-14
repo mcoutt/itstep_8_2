@@ -1,7 +1,7 @@
 import socket
 import time
 s = socket.socket()
-s.connect(('localhost',6000))
+s.connect(('localhost', 6000))
 
 data = input("Send>")
 s.sendall(data.encode())
